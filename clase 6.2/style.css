@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Grid container*/
+body{
+    min-height: 100vh;
+    width: 100%;
+    display:grid;
+    grid-template-areas: 
+    "nav header     header"
+    "nav productos  aside"
+    "nav servicios aside"
+    "nav footer footer";
+    grid-template-columns: 150px 1fr 200px; 
+    grid-template-rows: 100px 1fr 1fr 10%; /*El porcentaje va a ser 
+    relativo al tamaño del contenedor*/
+    column-gap: 15px;
+    row-gap: 10px;
+    justify-items:legacy;
+    align-items: initial;
+}
+
+/*Grid items*/
+header{
+    grid-area: header;
+    background-color: brown;
+    position: sticky;
+}
+nav{
+    background-color: antiquewhite;
+    grid-area: nav;
+}
+aside{
+    background-color: aqua;
+    grid-area: aside;
+}
+#section1{
+    display: flex;
+    background-color: azure;
+    grid-area: productos;
+    
+}
+#section1 .box{
+    display: flex;
+}
+#section2{
+    background-color: blanchedalmond;
+    grid-area:servicios;
+}
+footer{
+    background-color:blueviolet;
+    grid-area:footer;
+}
+

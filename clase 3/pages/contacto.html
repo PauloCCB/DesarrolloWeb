@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contacto</h1> 
+    <a href="../index.html">Home</a>
+    <form action="">
+        <fieldset> <!---Contenedor-->
+            <legend>Datos de contacto</legend>
+            <label for="nombre">Nombre</label> 
+            <input type="text" id="nombre"> <!--De esta manera vinculamos el label con el input, con el id , igualmente al for--> <br>
+            <label for="email">correo electronico</label>
+            <input type="email" id="email" required>
+        </fieldset>
+        <fieldset>
+            <!--select-->
+            <legend>Datos del equipo</legend>
+
+            <select name="modelo" id="modelo">
+                <option value="iphone12">iPhone 12 pro max</option>
+                <option value="ipad-mini">iPad Mini</option>
+            </select>
+<br> <!--Checkbox-->
+            <p>Estado del equipo</p>
+            <label for="pantalla-rota">Pantalla rota</label>
+            <input type="checkbox" name="pantalla-rota" id="pantalla-rota">
+            
+            <label for="no-enciende">No enciende</label>
+            <input type="checkbox" name="no-enciende" id="no-enciende">
+            <br>
+<!--radio button-->
+            <p>Estado</p>
+            <input type="radio" name="condicion" id="usado">
+            <label for="usado">Usado</label>
+
+            <input type="radio" name="condicion" id="nuevo">
+            <label for="nuevo">Nuevo</label> 
+<br>
+            <label for="comentario">Deje su comentario</label><br>  
+            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+            
+            <br><!--boton para enviar-->
+            <input type="submit" value="Enviar">
+            <!--boton para limpiar-->
+            <input type="reset" value="Limpiar">
+        </fieldset>
+        
+    </form>
+
+
+
+    </footer>
+</body>
+</html>

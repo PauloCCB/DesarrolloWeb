@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.caja1,.caja2,.caja3{
+    width: 400px;
+    height: 400px;
+    background-color: red; 
+    /*box-sizing: border-box; /*Lo que realiza es que el contenido 
+    se ajusta al tamaño inicial mencionado, es decir , si al padding 
+    aumento 40 px, el contenido mencionado de 100px, se podrá en 60px*/
+    border: 1px  solid black ;
+}
+.caja1{
+    position:relative; /*Con el relative, se posiciona dependiendo 
+    de lo que esté arriba o abajo del bloque*/
+    background-color: blue;
+    width: 200px;
+    height: 150vh; /*150% de lo visible view port*/
+}
+
+/*.caja2{
+    width: 100px;
+    height: 100px;
+    position: absolute; /*En este caso se posiciona, debajo de la linea
+    separadora con la pagina*/
+/*Los elementos en bloque consumen todo su contenido, en cambio
+los de linea no necesarimente, solo ocupa el contenido necesario p
+para mostrar su contenido*/
+
+.caja2{ /*De esta manera pondremos un elemento estatico, con el position fixed
+    con el sticky se pega solo cuando llego a una parte*/
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    right: 20px;
+    position: fixed;
+}
+

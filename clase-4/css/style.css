@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*Regula el tamaño en caso se cambie la caja con el marging y el 
+    padding*/
+}
+/*selector con Id*/
+#pie-de-pagina{
+    background-color: blue;
+}
+
+/*selector con clase*/
+.Titulo-principal{
+    color:green;
+}
+
+/*Selector con etiqueta*/
+a{
+    color:Red;
+}
+/*#servicios h2{
+    color:red;
+}*/
+/*.titulo-servicios{
+    color:aqua;
+}*/
+#servicios .titulo-servicios{
+    color:gold;
+}
+.card h3{
+    color:blueviolet !important;
+    font-size: 12px;
+}
+nav ul{
+    list-style-type: none;
+    font-family: "Cabin";
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    color: aliceblue;
+    background-color:aliceblue;
+}
+
+p{
+    text-align: center;
+    text-decoration: none;
+}
+main{
+    background-image: url(../images/tentation.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}

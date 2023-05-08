@@ -1,0 +1,144 @@
+/* Reset
+Lo utilizamos para resetear los estilos que el navegador aplica por default
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/****** Layout *****/
+
+/* Header */
+header {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+
+header img {
+    width: 70px;
+}
+
+/* Navbar */
+nav{
+    width:70%;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+/* Footer */
+footer .redes, .enlaces a {
+    text-decoration: none;
+    color: black;
+}
+
+/****** Componentes *******/
+
+/* Button */
+.button {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 8px 14px;
+    /*margin: 20px 0;*/
+    display: inline-block;
+    border-radius: 20px;
+}
+
+/******* Pages *********/
+
+/* Index */
+
+#banner {
+    flex-direction: column;
+    height: 80vh;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*position: relative;*/
+}
+
+#banner .mainTitle {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#banner a {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    text-decoration: none;
+}
+
+#banner p {
+    margin: 30px 0;
+    max-width: 70%; /*Con esto el indico que no se podrá escapar mas del 70%*/
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Card */
+.cardServicios{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#servicios h2{
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    text-align: center; /* FIX: utilizar box model */
+    box-shadow: 2px 2px 15px rgb(172, 172, 172);
+    border-radius: 20px;
+    height: 200px;
+    width: 300px;
+    /*padding-top: 40px;*/
+    margin: 20px;
+}
+
+
+
+.card h3 {
+    font-style: italic;
+}
+
+footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+    border-top: 2px solid black;
+}
+
+.redes ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+}

@@ -1,0 +1,4 @@
+.padre-flex{
+    display: flex; /*flex acomada directamente a los hijos , no  a 
+    los nietos*/
+}

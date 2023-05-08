@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- De esta manera vinculamos archivos -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!----Encabezado -->
+    <header>
+        <h1>Comidas</h1>
+        <nav> <!---Etiqueta para indicar navegación-->
+            <!-- Lista no ordenada: ul , unorder list -->
+            <ul>
+                <!-- Lista de items -->
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>Galeria</li>
+                <li>Servicios:
+                    <ul>
+                        <li>Catering</li>
+                        <li>Delivery</li>
+                        <li>Viandas</li>
+                    </ul>
+                </li>
+                <li>Nosotros</li>
+                <li>
+                    <!-- A : Anchor, ancla , es para redireccionar links -->
+                    <!-- Esta es una ruta relativa -->
+                    <a href="./contacto.html" target="_blank">Contacto</a>
+                </li>
+
+            </ul>
+        </nav>
+
+
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <!-- Dentro de las comillas indicamos la direccion donde se enviará el form -->
+        <!-- Información sensible , datos, para que no se logre ver: POST -->
+        <!-- Información no sensible: GET -->
+    <form   form action="#" method="get">
+        <!-- Este es una etiqueta que no tiene cierre, es una etiqueta que no tiene un significado
+        general, es decir no es generico y el contenido puede variar , Como las demsa que vimos 
+        que son semánticas, engloban etiquetas ya definidas.-->
+        <p>Nombre</p>
+        <input type="text" placeholder="Nombre y apellido">
+        <br>
+        <p>Email</p>
+        <input type="email" placeholder="Email">
+        <p>Contraseña</p>
+        <input type="password" placeholder="password">
+        <p>Comentario</p>
+        <textarea name="" id="" cols="60" rows="5"></textarea>
+        <br>
+        <label>
+            <!-- Se usa para textos, es generica, su valor no está definido -->
+            <input type="checkbox"> 
+            <span>Subscribirme al newsletter</span> 
+        </label>
+        <br>
+        <select name="pais">
+            <option value="Seleccion">Seleccione su país</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Chile">Chile</option>
+            <option value="Peru">Peru</option>
+        </select>
+        <br>
+        <p>Seleccione un sexo</p>
+        <label >
+            <span>Hombre</span>
+            <input type="radio" name="sexo" value="hombre">
+            <span>Mujer</span>
+            <input type="radio" name="sexo" value="mujer">
+
+        </label>
+        <br>
+        <input type="number">
+        <br>
+        <input type="reset">
+        <br>
+        <input type="submit" value="Comentar">
+    </form>
+    </main>
+    <!-- Pie de pagina -->
+    <footer>
+        <ol>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+        </ol>
+    </footer>
+
+</body>
+
+</html>
